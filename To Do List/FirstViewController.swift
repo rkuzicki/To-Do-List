@@ -21,9 +21,6 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         cell.textLabel?.text = items[indexPath.row]
         return cell
     }
-    override func viewDidLoad() {
-        
-    }
     override func viewDidAppear(_ animated: Bool) {
         let itemsObject = UserDefaults.standard.object(forKey: "items")
         if let tempItems = itemsObject as? [String] {
